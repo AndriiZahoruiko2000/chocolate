@@ -4,8 +4,11 @@
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 .header .container {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .header-nav {
   display: flex;
@@ -14,13 +17,16 @@
 }
 .logo-accent {
 }
-.header-nav_list {
+.logo-svg {
+}
+.nav-container {
   display: none;
+}
+.header-nav_list {
 }
 .header-nav-list_item {
 }
 .header-social-list {
-  display: none;
 }
 .header-social-list_item {
 }
@@ -28,7 +34,6 @@
 }
 .header-social-list_svg {
 }
-
 .button-menu_svg {
   width: 24px;
   height: 24px;
