@@ -1,0 +1,75 @@
+.section {
+  padding-top: 10px;
+  padding-bottom: 60px;
+}
+
+.background-image {
+  background-image: url(../img/background/mobile/background-mobile.jpg);
+  max-width: 335px;
+  height: 620px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 32px;
+}
+
+.hero-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  max-width: 295px;
+}
+
+.hero-box_btn {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.hero-list_btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.hero-item_btn {
+}
+.hero-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+  padding: 12px 28px;
+  border-radius: 100px;
+}
+
+.hero-btn_buy {
+  background: var(--orange);
+}
+.hero-btn_how {
+  border: 1px solid var(--white);
+}
+
+.scroll-down {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: var(--white);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  max-width: 155px;
+}
+
+.icon-scroll {
+  fill: var(--white);
+}
