@@ -37,3 +37,14 @@
   color: rgba(255, 255, 255, 0.7);
   max-width: 308px;
 }
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .about-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

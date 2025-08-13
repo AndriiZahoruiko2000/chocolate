@@ -40,8 +40,7 @@
   align-items: center;
   gap: 14px;
 }
-.hero-item_btn {
-}
+
 .hero-btn {
   font-weight: 600;
   font-size: 14px;
@@ -72,4 +71,17 @@
 
 .icon-scroll {
   fill: var(--white);
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .background-image {
+    background-image: url(../img/background/tablet/background-tablet.jpg);
+    max-width: 704px;
+    height: 890px;
+    padding: 40px;
+  }
 }
