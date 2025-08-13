@@ -1,0 +1,46 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: #2e2f42;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 311px;
+  min-height: 609px;
+
+  transform: translate(-50%, -50%);
+
+  background-color: #ffffff;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-close_btn {
+  position: absolute;
+
+  width: 28px;
+  height: 28px;
+  top: 24px;
+  right: 24px;
+}
+
+.modal-close_svg {
+  stroke: black;
+}
