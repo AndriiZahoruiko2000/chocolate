@@ -5,8 +5,91 @@
         <use href="../img/sprite.svg#clos"></use>
       </svg>
     </button>
-    <!-- <p class="modal-title">
-      Leave a review about <span class="modal-title_accent">our chocolate</span>
-    </p> -->
+    <p class="modal-title">
+      Leave a review <br />
+      about <span class="modal-title_accent">our chocolate</span>
+    </p>
+
+    <form class="modal-form" action="">
+      <div class="modal-form_box">
+        <label class="modal-form_label" for="user-name">Name</label>
+
+        <div class="modal-form_wrapper">
+          <input
+            class="modal-form_input"
+            type="text"
+            id="user-name"
+            name="user-name"
+          />
+          <svg class="modal-form_svg" width="17" height="17">
+            <use href="../img/sprite.svg#user"></use>
+          </svg>
+        </div>
+      </div>
+
+      <div class="modal-form_box">
+        <label class="modal-form_label" for="user-mail">Email</label>
+
+        <div class="modal-form_wrapper">
+          <input
+            class="modal-form_input"
+            type="text"
+            id="user-mail"
+            name="user-mail"
+          />
+          <div class="box-decor">
+            <svg class="modal-form_svg" width="17" height="17">
+              <use href="../img/sprite.svg#mail"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-form_box">
+        <label class="modal-form_label" for="user-tel">Phone Number</label>
+
+        <div class="modal-form_wrapper">
+          <input
+            class="modal-form_input"
+            type="text"
+            id="user-tel"
+            name="user-tel"
+          />
+          <div class="box-decor">
+            <svg class="modal-form_svg" width="17" height="17">
+              <use href="../img/sprite.svg#phone"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-form_group">
+        <label for="cooment" class="modal-form_label">Comment</label>
+        <textarea
+          class="modal-form_textarea"
+          name="comment"
+          id="comment"
+          placeholder="Enter text"
+        ></textarea>
+      </div>
+
+      <div class="modal-privat">
+        <input
+          type="checkbox"
+          type="checkbox"
+          class="modal-privat_checkbox"
+          id="privat-pol"
+        />
+        <label class="modal-privat_label" for="privat-pol">
+          <span class="check"></span>
+          <p class="check-text">
+            I accept the terms and conditions of the
+            <span class="check-accent">Privacy Policy</span>
+          </p>
+        </label>
+      </div>
+
+      <button class="modal-btn" type="submit">Send</button>
+    </form>
   </div>
 </div>

@@ -34,43 +34,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
-.hero-list_btn {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-
-.hero-btn {
-  font-weight: 600;
-  font-size: 14px;
-  color: var(--white);
-  padding: 12px 28px;
-  border-radius: 100px;
-}
-
-.hero-btn_buy {
-  background: var(--orange);
-}
-.hero-btn_how {
-  border: 1px solid var(--white);
-}
-
-.scroll-down {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: -0.03em;
-  color: var(--white);
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  max-width: 155px;
-}
-
-.icon-scroll {
-  fill: var(--white);
+  padding: 20px;
 }
 
 @media only screen and (min-width: 768px) {
