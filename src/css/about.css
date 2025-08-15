@@ -39,12 +39,37 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
   .about-list {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .about-list {
+    justify-content: center;
+    gap: 70px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .about-list_item {
+    flex-basis: calc((100% - 140px) / 3);
+    position: relative;
+  }
+
+  .about-list_item:not(:last-child)::after {
+    position: absolute;
+
+    content: '';
+    height: 124px;
+    width: 1px;
+    right: 0;
+    top: 60px;
+    background-color: #ffffff;
   }
 }

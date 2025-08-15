@@ -3,21 +3,24 @@
   padding-bottom: 60px;
 }
 
-.background-image {
+.background {
   background-image: url(../img/background/mobile/background-mobile.jpg);
+
   max-width: 335px;
-  height: 620px;
-  margin: 0 auto;
+  min-height: 621px;
+
   border-radius: 30px;
-  background-repeat: no-repeat;
+
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 20px;
-  padding-left: 20px;
+
   display: flex;
-  flex-direction: column;
   justify-content: flex-end;
+  flex-direction: column;
   gap: 32px;
+
+  padding: 20px;
 }
 
 .hero-title {
@@ -27,25 +30,111 @@
   line-height: 1.2;
   letter-spacing: -0.03em;
   color: var(--white);
-  max-width: 295px;
 }
 
 .hero-box_btn {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 20px;
+}
+
+.hero-list_btn {
+  display: flex;
+  gap: 14px;
+}
+
+.hero-btn {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--white);
+
+  border-radius: 100px;
+
+  padding: 0 28px;
+
+  height: 41px;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.hero-btn_buy {
+  background-color: var(--orange);
+}
+
+.hero-btn_buy:hover,
+.hero-btn_buy:focus {
+  background-color: transparent;
+  color: var(--orange);
+}
+
+.hero-btn_how {
+  border: 1px solid var(--white);
+}
+
+.hero-btn_how:hover,
+.hero-btn_how:focus {
+  border: none;
+  background-color: var(--orange);
+}
+
+.scroll {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: var(--white);
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon-scroll {
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  fill: var(--orange);
+}
+
+.scroll:hover .icon-scroll,
+.scroll:focus .icon-scroll {
+  fill: #ffffff;
+  background-color: var(--orange);
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-
-  .background-image {
-    background-image: url(../img/background/tablet/background-tablet.jpg);
+  .background {
+    background-image: url(../img/background/tablet/background-tablet@2x.jpg);
     max-width: 704px;
     height: 890px;
     padding: 40px;
+  }
+
+  .hero-title {
+    max-width: 484px;
+    font-size: 28px;
+    line-height: 1.21;
+    letter-spacing: -0.03em;
+  }
+
+  .hero-box_btn {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .scroll {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .background {
+    background-image: url(../img/background/desktop/desktop-background.jpg);
+    max-width: 1136px;
+    max-height: 600px;
   }
 }
