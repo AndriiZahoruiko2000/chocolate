@@ -1,0 +1,91 @@
+.made-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 32px;
+}
+
+.made-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.made-wrapper {
+  border-radius: 15px;
+  background-color: var(--white);
+  padding: 20px 14px;
+  width: 100%;
+}
+
+.made-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.made-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding-left: 18px; /* можна прибрати, якщо буде псевдоелемент */
+}
+
+.made-list-item {
+  position: relative;
+}
+
+/* варіант через псевдоелемент */
+.made-list-item::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: -18px;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.made-list-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: var(--black);
+}
+
+@media only screen and (min-width: 768px) {
+  .made-title {
+    font-size: 24px;
+    line-height: 1.16667;
+    margin-bottom: 50px;
+  }
+
+  .made-wrapper {
+    padding: 32px;
+    max-width: 604px;
+  }
+
+  .made-subtitle {
+    max-width: 450px; /* замінив min-width */
+    margin-bottom: 28px;
+  }
+
+  .made-list-text {
+    max-width: 464px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .made-box {
+    flex-direction: row;
+  }
+}

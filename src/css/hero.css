@@ -1,5 +1,5 @@
 .background {
-  background-image: url(../img/background/mobile/background-mobile.jpg);
+  background-image: url(../img/mobile/back-mob.jpg);
 
   max-width: 335px;
   min-height: 621px;
@@ -98,7 +98,7 @@
 
 @media only screen and (min-width: 768px) {
   .background {
-    background-image: url(../img/background/tablet/background-tablet@2x.jpg);
+    background-image: url(../img/tablet/back-tab.jpg);
     max-width: 704px;
     height: 890px;
     padding: 40px;
@@ -128,7 +128,7 @@
   }
 
   .background {
-    background-image: url(../img/background/desktop/desktop-background.jpg);
+    background-image: url(../img/desctop/back-desc.jpg);
     max-width: 1136px;
     max-height: 600px;
   }
