@@ -1,0 +1,131 @@
+.review-title {
+  font-weight: 600;
+  font-size: 20px;
+
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--orange);
+  margin-bottom: 72px;
+}
+.review-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.review-list_item:nth-child(2),
+.review-list_item:nth-child(3) {
+  display: none;
+}
+
+.review-list_item {
+  position: relative;
+
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  background-color: var(--white);
+
+  height: 200px;
+}
+
+.review-list_img {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+.review-box {
+  padding: 56px 18px 42px 18px;
+}
+
+.review-list_subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+  color: var(--black);
+  margin-bottom: 24px;
+}
+
+.review-list_text {
+  font-weight: 400;
+  font-size: 14px;
+
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.review-decor_list {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  margin-bottom: 42px;
+}
+
+.review-decor_dot {
+  display: inline-flex;
+
+  content: '';
+  width: 13px;
+  height: 13px;
+
+  background-color: rgba(17, 17, 17, 0.1);
+  border-radius: 50%;
+}
+
+.review-decor_item:first-child .review-decor_dot {
+  width: 29px;
+  border-radius: 25px;
+  background-color: var(--orange);
+}
+
+.review-btn {
+  margin: 0 auto;
+
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: var(--black);
+
+  padding: 12px 28px;
+
+  border: 1px solid var(--orange);
+  border-radius: 35px;
+}
+
+@media only screen and (min-width: 768px) {
+  .review-title {
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+  }
+
+  .review-list {
+    gap: 16px;
+  }
+
+  .review-list_item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+
+  .review-list_item:nth-child(2) {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .review-list_item:nth-child(3) {
+    display: block;
+  }
+
+  .review-list_item {
+    flex-basis: calc((100% - 46px) / 3);
+  }
+}

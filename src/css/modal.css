@@ -18,7 +18,7 @@
   top: 50%;
   left: 50%;
 
-  width: 311px;
+  max-width: 311px;
   min-height: 609px;
   border-radius: 15px;
 
@@ -224,4 +224,15 @@
 .modal-btn:focus {
   background-color: #fcf1e0;
   color: var(--orange);
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    max-width: 517px;
+    padding: 40px;
+  }
+
+  .modal-form_textarea {
+    height: 137px;
+  }
 }
